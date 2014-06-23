@@ -4,7 +4,10 @@ runtime: python27
 api_version: 1
 threadsafe: true
 
-handlers:
+handlers:  
+- url: /js
+  static_dir: js
+
 - url: /.*
   script: d20multitool.application
 

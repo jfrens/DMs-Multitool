@@ -1,1 +1,57 @@
-HIHIHIHIHI
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Dice Page</title>
+<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+<!--style experiment, should migrate to css file?-->
+<style>
+.ui-grid-b {
+	height: 100vh;
+	font-size: 15vh;
+}
+
+.ui-block-a, .ui-block-b, .ui-block-c {
+	text-align: center;
+	height: 19vh;
+}
+
+button {
+	height: 100%;
+}
+</style>
+
+</head>
+
+<body>
+<div role="main" class="ui-content">
+	<div class="ui-grid-b">
+		<div class="ui-block-a"><button id="minus" type="button" data-icon="minus" data-iconpos="top"></button></div>
+		<div class="ui-block-b"><div id="sum" style="line-height: 20vh"><strong>0</strong></div></div>
+		<div class="ui-block-c"><button id="plus" type="button" data-icon="plus" data-iconpos="top"></button></div>
+		<!--next row-->
+		<div class="ui-block-a"><button id="d2" type="button">d2</button></div>
+		<div class="ui-block-b"><button id="d3" type="button">d3</button></div>
+		<div class="ui-block-c"><button id="d4" type="button">d4</button></div>
+		<!--next row-->
+		<div class="ui-block-a"><button id="d6" type="button">d6</button></div>
+		<div class="ui-block-b"><button id="d8" type="button">d8</button></div>
+		<div class="ui-block-c"><button id="d10" type="button">d10</button></div>
+		<!--next row-->
+		<div class="ui-block-a"><button id="d12" type="button">d12</button></div>
+		<div class="ui-block-b"><button id="d20" type="button">d20</button></div>
+		<div class="ui-block-c"><button id="d100" type="button">d100</button></div>
+		<!--next row-->
+		<div class="ui-block-a"><button id="duser1" type="button"><input type="text" id="cust-die-1" value="" data-clear-btn="true" data-prevent-focus-zoom="true"></button></div>
+		<div class="ui-block-b"><button id="duser2" type="button"><input type="text" id="cust-die-2" value="" data-clear-btn="true" data-prevent-focus-zoom="true"></button></div>
+		<div class="ui-block-c"><button id="duser3" type="button"><input type="text" id="cust-die-3" value="" data-clear-btn="true" data-prevent-focus-zoom="true"></button></div>
+		<script src="/js/dice.js"></script>
+	</div>
+</div>
+</body>
+
+</html>
