@@ -11,13 +11,13 @@ var rollCount = {
 	"d100": 0	
 }
 
-function stringFromRollCount()
+function stringFromrollCount()
 {
 	var ret = "";
 	for (var die in rollCount)
 	{
 		if (die != "c" && rollCount[die] != 0) {
-			ret += rollCount[die] + "(" + die + ")";
+			ret += "(" + rollCount[die] + die + ")";
 			ret += "+";
 		}
 	}
@@ -25,59 +25,87 @@ function stringFromRollCount()
 	return ret;
 }
 
-function clearRollCount()
+function clearrollCount()
 {
 	for (var die in rollCount)
 	{
 		rollCount[die] = 0;
 	}
-	rollCount[$("#duser1").text()] = 0;
-	rollCount[$("#duser2").text()] = 0;
+}
+
+function countRoll(diceString) {
+	if (diceString == undefined)
+		return;
+	var splitlist = diceString.split("+", 2);
+	if (splitlist[1] != undefined) {
+		countRoll(splitlist[1]);
+	}
+	console.log(splitlist);
+	var diceSplit = splitlist[0].replace("(", "").replace(")", "").split("d", 2);
+	if (diceSplit[1] == undefined) {
+		console.log("constant");
+		rollCount["c"] += parseInt(diceSplit[0]);
+	} else {
+		console.log(diceSplit[0] + "d" + diceSplit[1]);
+		var a = parseInt(diceSplit[0]);
+		console.log(a);
+		if (isNaN(a)) a = 1;
+		console.log(a);
+		console.log(diceSplit[1]);
+		rollCount["d"+parseInt(diceSplit[1])] += a;
+	}
+
+	return;
 }
 
 function computeRoll(diceString) {
-	var splitlist = diceString.split("d", 2);
-	var a = "";
-	if (splitlist[0] == "") {
-		a = 1
-	} else {
-		a = parseInt(splitlist[0]);
+	if (diceString == undefined)
+		return;
+	var splitlist = diceString.split("+", 2);
+	var c = 0;
+	if (splitlist[1] != undefined) {
+		c += computeRoll(splitlist[1]);
 	}
-	var splitlist2 = splitlist[1].split(/\+/, 2);
-	var r = parseInt(parseInt(splitlist2[0]));
-	var c = "";
-	if (splitlist2[1] == undefined) {
-		c = 0
+	var a = 0;
+	var r = 0;
+	var diceSplit = splitlist[0].replace("(", "").replace(")", "").split("d", 2);
+	if (diceSplit[1] == undefined) {
+		c += parseInt(diceSplit[0]);
 	} else {
-		c = parseInt(splitlist2[1]);
+		var a = parseInt(diceSplit[0]);
+		if (isNaN(a)) a = 1;
+		var r = parseInt(diceSplit[1]);
+		if (isNaN(r)) r = 0;
+
 	}
+	
 	var rand = 0;
 	for (i = 0; i < a; i++) {
 		rand += Math.floor((Math.random() * r) + 1);
 	}
-	return (rand) + c
+	return (rand) + c;
 }
 
 $("button").click( function() {
 	var roll = 0;
 	if ($(this).attr('id') == "minus") {
 		roll = -1;
-		rollCount["c"] -= 1;
+		countRoll("-1");
 	} else if ($(this).attr('id') == "plus") {
 		roll = 1;
-		rollCount["c"] += 1;
+		countRoll("1");
 	} else if ($(this).attr('id') == "clear") {
 		$("#sum").text(0);
-		clearRollCount();
+		clearrollCount();
 	} else if ($(this).text() == "save") {
-		$(this).text(stringFromRollCount());
+		$(this).text(stringFromrollCount());
 		$("#sum").text(0);
-		clearRollCount();
+		clearrollCount();
 	} else {
 		roll = computeRoll($(this).text());
-		rollCount[$(this).text()] += 1;
+		countRoll($(this).text());
 	}
 	var nextsum = parseInt($("#sum").text()) + roll;
 	$("#sum").text(nextsum);
-	$("#roll").text(stringFromRollCount());
+	$("#roll").text(stringFromrollCount());
 });
