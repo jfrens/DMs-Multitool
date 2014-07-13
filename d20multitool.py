@@ -28,9 +28,18 @@ class bestiaryProxy (webapp2.RequestHandler):
 		response = urlfetch.fetch(urlstring, method=urlfetch.GET)
 		self.response.out.write(response.content);
 		
+class d20CssProxy (webapp2.RequestHandler):
+	def get(self):
+		str = self.request.url
+		prefix="http://www.d20pfsrd.com/"
+		urlstring=str.replace(self.request.host_url, prefix) 
+		response = urlfetch.fetch(urlstring, method=urlfetch.GET)
+		self.response.out.write(response.content);
+
 application = webapp2.WSGIApplication([
 	('/', MainPage),
 	('/dice', DicePage),
 	('/bestiary', bestiaryPage),
 	('/bestiary/monster-listings/.*', bestiaryProxy),
+	('/_/.*', bestiaryProxy),
 ], debug=True)

@@ -1,48 +1,44 @@
-function scale( width, height, padding, border ) {
-    var scrWidth = $( window ).width() - 30,
-        scrHeight = $( window ).height() - 30,
-        ifrPadding = 2 * padding,
-        ifrBorder = 2 * border,
-        ifrWidth = width + ifrPadding + ifrBorder,
-        ifrHeight = height + ifrPadding + ifrBorder,
-        h, w;
- 
-    if ( ifrWidth < scrWidth && ifrHeight < scrHeight ) {
-        w = ifrWidth;
-        h = ifrHeight;
-    } else if ( ( ifrWidth / scrWidth ) > ( ifrHeight / scrHeight ) ) {
-        w = scrWidth;
-        h = ( scrWidth / ifrWidth ) * ifrHeight;
-    } else {
-        h = scrHeight;
-        w = ( scrHeight / ifrHeight ) * ifrWidth;
-    }
- 
-    return {
-        'width': w - ( ifrPadding + ifrBorder ),
-        'height': h - ( ifrPadding + ifrBorder )
-    };
-};
-
 $( document ).on( "pageinit", function() {
-    $( "#popupVideo iframe" )
-        .attr( "width", 0 )
-        .attr( "height", 0 );
- 
-    $( "#popupVideo" ).on({
-        popupbeforeposition: function() {
-            var size = scale( 497, 298, 15, 1 ),
-                w = size.width,
-                h = size.height;
- 
-            $( "#popupVideo iframe" )
-                .attr( "width", w )
-                .attr( "height", h );
-        },
-        popupafterclose: function() {
-            $( "#popupVideo iframe" )
-                .attr( "width", 0 )
-                .attr( "height", 0 );
-        }
-    });
+	
 });
+
+$("a").on("click", function () {
+	$('body').css('overflow','hidden');
+	$.ajax({
+		url: "http://" + window.location.host + $(this).attr("src"),
+		dataType: "html",
+		crossDomain: "true",
+		success: function (data) {
+			var dom = $(data);
+			$("iframe", dom).remove();
+			var goodstuff = $("#sites-canvas-wrapper", dom).html();
+			$("#popupFrame").attr("srcdoc", goodstuff);
+			$("#popupFrame").attr("width", $(window).width() - 100);
+			$("#popupFrame").attr("height", $(window).height() - 100);
+			$("#popupWindow").popup("open");
+		}
+	});
+});
+
+$("#popupClose").on("click", function () {
+	$("#popupWindow").popup("close");
+	$('body').css('overflow','auto');
+});
+
+/*		<script>
+		function on_load(iframe){
+			console.log("something god");
+			try {
+				// Displays the first 50 chars in the innerHTML of the
+				// body of the page that the iframe is showing.
+				// EDIT 2012-04-17: for wider support, fallback to contentWindow.document
+				var doc = iframe.contentDocument || iframe.contentWindow.document;
+				doc.getElementById("sites-chrome-sidebar-left").hide();
+				//alert(doc.body.innerHTML.substring(0, 50));
+			} catch (e) {
+				// This can happen if the src of the iframe is
+				// on another domain
+				alert('exception: ' + e);
+			}
+		}
+		</script>*/

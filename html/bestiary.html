@@ -11,26 +11,1409 @@
 </head>
 
 <body>
-<div>
-<a href="#popupVideo" data-rel="popup" data-position-to="window" data-role="button" data-theme="a" data-inline="true" aria-haspopup="true" aria-owns="popupVideo" aria-expanded="false" class="ui-link ui-btn ui-btn-a ui-btn-inline ui-shadow ui-corner-all" role="button">Launch video player</a>
-	<div data-role="popup" id="popupVideo" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
-		<div>click me</div>
-		<!--iframe src="http://player.vimeo.com/video/41135183" width="497" height="298" seamless></iframe-->
-		<!--iframe src="/dice" width="497" height="298" seamless></iframe-->
-		<iframe src="/bestiary/monster-listings/aberrations/aboleth" width="497" height="298" seamless></iframe>
+<div data-role="popup" id="popupWindow" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+	<div class="ui-grid-b">
+		<div class="ui-block-a"><button id="popupClose">close</button></div>
+		<div class="ui-block-b"></div>
+		<div class="ui-block-c"><!--button>engage</button--></div>
 	</div>
+	<iframe id="popupFrame" src="" width="1000" seamless></iframe>
 </div>
+
 
 	<ul data-role="listview" data-filter="true" data-inset="true">
 		<li data-role="list-divider">Aberrations</li>
-		<li><a href="http://d20pfsrd.com/bestiary/monster-listings/aberrations/aboleth" data-rel="popup" data-transition="pop">Aboleth</a></li>
-		<li>Alex Wickerham</li>
-		<li>Avery Johnson</li>
-		<li data-role="list-divider">B</li>
-		<li>Bob Cabot</li>
-		<li data-role="list-divider">C</li>
-		<li>Caleb Booth</li>
-		<li>Christopher Adams</li>
+			<li class="topLevel nav-first"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/aboleth" jotId="wuid:gx:68e7b3d219dd10b2" >Aboleth</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/abyssal-harvester-tohc" jotId="wuid:gx:3cbd4b108a5f3f24" >Abyssal Harvester</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/adherer-tohc" jotId="wuid:gx:19729e931bcab7f5" >Adherer</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/akata" jotId="wuid:gx:59f89b9cbc8ef159" >Akata</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/amphisbaena-encepalon-gorger-tohc" jotId="wuid:gx:546cfbc4a82eb81b" >Amphisbaena Encepalon Gorger</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/arcanoplasm-tohc" jotId="wuid:gx:7835cfd09a9b263f" >Arcanoplasm</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:2f68d205e6e4ef6d"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/argorth" jotId="wuid:gx:2f68d205e6e4ef6d" >Argorth</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/argorth/argorth-cinder-scourge" jotId="wuid:gx:78cde58203085c7a" >Argorth, Cinder Scourge</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/argus" jotId="wuid:gx:32befef8490d5326" >Argus</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/azruverda" jotId="wuid:gx:106dbf87c02ddb4a" >Azruverda</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/bagiennik-kp" jotId="wuid:gx:4d626944a96840" >Bagiennik</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/bedlam" jotId="wuid:gx:c8a00006ccee583" >Bedlam</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/belabra-tangler" jotId="wuid:gx:7f227c8b5b007663" >Belabra (Tangler)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/blightspawn-of-ghlaunder" jotId="wuid:gx:12eae9c5e709b985" >Blightspawn</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/blindheim-TOHC" jotId="wuid:gx:a546c87724672d8" >Blindheim</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/blood-golem-tohc" jotId="wuid:gx:40dbd944dc80b5a0" >Blood Golem</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/blood-orchid-fgg" jotId="wuid:gx:49337683dd33d82d" >Blood Orchid</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/boggart" jotId="wuid:gx:36006bae9a6c4754" >Boggart</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/bogwid" jotId="wuid:gx:63987ed1aa30c73c" >Bogwid</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/bogwiggle" jotId="wuid:gx:6e4b7df14441a58c" >Bogwiggle</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/bone-cobbler" jotId="wuid:gx:2abcf82f8377e76c" >Bone Cobbler</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/bone-crawler-fgg" jotId="wuid:gx:1aa8f3990d144fe8" >Bone Crawler</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/bonesucker" jotId="wuid:gx:3e916505b7cb0288" >Bonesucker</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/brethedan" jotId="wuid:gx:4aaba56b945cdefe" >Brethedan</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/brume" jotId="wuid:gx:5fbbb249d2097bfe" >Brume</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/carbuncle-TOHC" jotId="wuid:gx:1a3ff7c94d9a3a7d" >Carbuncle (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/carrion-moth" jotId="wuid:gx:712baaefe3e9bf3a" >Carrion Moth</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/cerebral-stalker" jotId="wuid:gx:6e9eadacdaaed059" >Cerebral Stalker</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/charybdis" jotId="wuid:gx:47ec106f22934d8d" >Charybdis</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/chelicerae-mb" jotId="wuid:gx:6183e5d55ac16041" >Chelicerae</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/cherum" jotId="wuid:gx:57ff278c819d0086" >Cherum</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:579cd6f03c1a6935"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/choker" jotId="wuid:gx:579cd6f03c1a6935" >Choker</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/choker/choker-brute" jotId="wuid:gx:14769efd871b35f5" >Choker Brute</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/chon-chon" jotId="wuid:gx:54c84260c9c776f" >Chon Chon</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/chon-chon-swarm" jotId="wuid:gx:7462120669cbb822" >Chon Chon Swarm</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/chuul" jotId="wuid:gx:2b2f9741e36e09c3" >Chuul</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/clamor" jotId="wuid:gx:32f72633690bef17" >Clamor</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/cloaker" jotId="wuid:gx:df9cd5322232fb3" >Cloaker</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:99b2b8432daf284"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/corpse-orgy" jotId="wuid:gx:99b2b8432daf284" >Corpse Orgy</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/corpse-orgy/corpse-orgy-fiery" jotId="wuid:gx:381113095f1e201d" >Corpse Orgy, Fiery</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/crag-man" jotId="wuid:gx:5c22d8e808c96673" >Crag Man</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/crimson-death-fgg" jotId="wuid:gx:5c0ac082d8445244" >Crimson Death</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/crystalline-horror" jotId="wuid:gx:42ab34f653d0c22f" >Crystalline Horror</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/kleestad" jotId="wuid:gx:4dbf37261b9e63b2" >Cursed Beast</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/dark-young-of-shub-niggurath" jotId="wuid:gx:390a21a6563eafed" >Dark Young of Shub-Niggurath</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/decapus" jotId="wuid:gx:6d669f1dff470ba5" >Decapus</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/decapus-tohc" jotId="wuid:gx:59ba7e0477582de0" >Decapus (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/delver" jotId="wuid:gx:15c564933592c949" >Delver</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/delver-srd" jotId="wuid:gx:7083bd9f8526fb9f" >Delver (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/destrachan" jotId="wuid:gx:25459d932992c1" >Destrachan</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/dossenus" jotId="wuid:gx:4d791de4b6da14db" >Dossenus</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/draconid-tohc" jotId="wuid:gx:72b317d58473f876" >Draconid</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/drakainia" jotId="wuid:gx:591400657a60bbbb" >Drakainia</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/drider" jotId="wuid:gx:38fbe963fe131a0d" >Drider</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/dust-digger" jotId="wuid:gx:4c2872640e4f0703" >Dust Digger</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/dust-digger-tohc" jotId="wuid:gx:61c9bca79f3d946e" >Dust Digger (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/dwiergeth" jotId="wuid:gx:7227b17d0533635a" >Dwiergeth</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/ecstasy-feeder" jotId="wuid:gx:59bbfddf7f97e699" >Ecstasy Feeder</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/elder-thing" jotId="wuid:gx:7e3dd173db383957" >Elder Thing</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/emkrah" jotId="wuid:gx:ff9b05cc74c1c9" >Emkrah</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/encephalon-gorger-tohc" jotId="wuid:gx:52e5c90bf749883b" >Encephalon Gorger</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/ethereal-filcher" jotId="wuid:gx:564bc0a66aee7dcf" >Ethereal Filcher</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:27e36e8209b4966a"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/ettercap" jotId="wuid:gx:27e36e8209b4966a" >Ettercap</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/ettercap/ettercap-advanced" jotId="wuid:gx:ba8cec4370e555b" >Ettercap, Advanced</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/evil-eye" jotId="wuid:gx:437ddb540becedb9" >Evil Eye</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/evil-eye-ff" jotId="wuid:gx:7c87fbb4dbe0c4cc" >Evil Eye (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/executioner-s-hood-tohc" jotId="wuid:gx:ef422f5ffaf4704" >Executioner's Hood</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/eye-of-the-deep-tohc" jotId="wuid:gx:da172f90f592156" >Eye of the Deep</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/faceless-stalker" jotId="wuid:gx:eab2c5145d50706" >Faceless Stalker</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fachen" jotId="wuid:gx:1bcedb6b505809f2" >Fachen</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fleshdreg" jotId="wuid:gx:5fcec59fa925f2ad" >Fleshdreg</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fleshdreg-swarm" jotId="wuid:gx:1245e0a03dd06df3" >Fleshdreg Swarm</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:564658eef735cd11"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fleshwarped" jotId="wuid:gx:564658eef735cd11" >Fleshwarped</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fleshwarped/fleshwarp-ghonhatine" jotId="wuid:gx:7db577d425bea39e" >Fleshwarp, Ghonhatine</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fleshwarped/fleshwarp-grothlut" jotId="wuid:gx:300938e22aa6adf3" >Fleshwarp, Grothlut</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fleshwarped/fleshwarp-halsora" jotId="wuid:gx:4c38086ea8a7d857" >Fleshwarp, Halsora</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fleshwarped/fleshwarp-irnakurse" jotId="wuid:gx:29aa95fded15e6e8" >Fleshwarp, Irnakurse</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/flumph" jotId="wuid:gx:5f90257924fd0cff" >Flumph</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/flumph-tohc" jotId="wuid:gx:3db9d47580df2ef5" >Flumph (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/flying-polyp" jotId="wuid:gx:2cebd5f8d68aa8d9" >Flying Polyp</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fogwarden" jotId="wuid:gx:35a2820fc136632" >Fogwarden</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/froghemoth" jotId="wuid:gx:8371596ae95317e" >Froghemoth</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:3c3f781ae4c1f114"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/froghemoth-TOHC" jotId="wuid:gx:3c3f781ae4c1f114" >Froghemoth (3pp)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/froghemoth-TOHC/froghemoth-electric" jotId="wuid:gx:4958887acb29a978" >Froghemoth, Electric</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/froghemoth-TOHC/tadhemoth" jotId="wuid:gx:148b93ecb8881e8f" >Tadhemoth</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/fungal-crawler" jotId="wuid:gx:74f908d36763fee0" >Fungal Crawler</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gambado-tohc" jotId="wuid:gx:2a8bf53fcf110703" >Gambado</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/get-of-iblis" jotId="wuid:gx:50544882fc9a1bc6" >Get of Iblis</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/ghorazagh" jotId="wuid:gx:a1d66658c47e493" >Ghorazagh</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gibbering-abomination-fgg" jotId="wuid:gx:258f49313d082e5c" >Gibbering Abomination</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gibbering-mouther" jotId="wuid:gx:bf4a7b2a9f77fd4" >Gibbering Mouther</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:2a8a28fbb560117a"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gibbering-orb-fgg" jotId="wuid:gx:2a8a28fbb560117a" >Gibbering Orb</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gibbering-orb-fgg/gibbering-orb-lesser-fgg" jotId="wuid:gx:7fe96219d7f1c60c" >Gibbering Orb, Lesser</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/goblin-naga" jotId="wuid:gx:18a12c4e25493807" >Goblin Naga</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/goblin-snake" jotId="wuid:gx:26057f18cbdfaa86" >Goblin Snake</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gohl-tohc" jotId="wuid:gx:299497fc9d8aff93" >Gohl</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gorbel-tohc" jotId="wuid:gx:3de8840c747ad5cb" >Gorbel</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:159ebfad823eb8fa"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/great-old-ones" jotId="wuid:gx:159ebfad823eb8fa" >Great Old Ones</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/great-old-ones/great-old-one-cthulhu" jotId="wuid:gx:3bd436d9c988f646" >Great Old One, Cthulhu</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/great-old-ones/great-old-one-hastur" jotId="wuid:gx:67c5367d3887bfbb" >Great Old One, Hastur</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:67bac87902ad167c"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/grick" jotId="wuid:gx:67bac87902ad167c" >Grick</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/grick/grick-jungle" jotId="wuid:gx:6dd7d3ecd895e413" >Grick, Jungle</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/grimslake" jotId="wuid:gx:30668b029a6795cb" >Grimslake</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/grindylow" jotId="wuid:gx:6ea4f190b070e1a2" >Grindylow</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:5674538b934f10b1"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gug" jotId="wuid:gx:5674538b934f10b1" >Gug</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gug/gug-savant" jotId="wuid:gx:7efd6f084a430e88" >Gug Savant</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/gutslug-tohc" jotId="wuid:gx:4f885da6fd6a8fb" >Gutslug</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/havero" jotId="wuid:gx:4dd737b4e499c9e9" >Havero</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/havero-tentacle" jotId="wuid:gx:53913eaadce0ed54" >Havero Tentacle</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/hell-moth" jotId="wuid:gx:3d75c12ea3071982" >Hell Moth</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/hyakume" jotId="wuid:gx:5af8e7181a9ee48f" >Hyakume</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/iku-turso" jotId="wuid:gx:795af4d3eb923493" >Iku-Turso</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/incutilis" jotId="wuid:gx:b131b884d56b0d4" >Incutilis</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/intellect-devourer" jotId="wuid:gx:618bdd013da0195e" >Intellect Devourer</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/irlgaunt" jotId="wuid:gx:1b6261aa16ead527" >Irlgaunt</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:544e78a8db837880"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/jelly-marsh" jotId="wuid:gx:544e78a8db837880" >Jelly, Marsh</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/jelly-marsh/jelly-marsh-jubilex-touched" jotId="wuid:gx:5922758b1740d7f6" >Jelly, Marsh, Jubilex-Touched</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/jubear" jotId="wuid:gx:10c62ed644da1409" >Jubear</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/living-rune" jotId="wuid:gx:dd847f444d0e574" >Living Rune</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/lorelei" jotId="wuid:gx:6272161a06956ad3" >Lorelei</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/lunarma" jotId="wuid:gx:1195de0f5d5ce09c" >Lunarma</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/lurker-above-TOHC" jotId="wuid:gx:666a23a498dfc3de" >Lurker Above</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:767da450e7cd49a"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/lurking-ray" jotId="wuid:gx:767da450e7cd49a" >Lurking Ray</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/lurking-ray/executioner-s-hood" jotId="wuid:gx:10f52ce6729229e6" >Executioner’s Hood</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/lurking-ray/lurker-above" jotId="wuid:gx:576fc9c119f9c63e" >Lurker Above</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/lurking-ray/trapper" jotId="wuid:gx:951feb823cf5ef5" >Lurking Ray, Trapper</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/mawler" jotId="wuid:gx:768d6a4c0d63385a" >Mawler</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:44e201d7e7dc2faf"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/mimic" jotId="wuid:gx:44e201d7e7dc2faf" >Mimic</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/mimic/mimic-failed-apotheosis" jotId="wuid:gx:4660368c5ac941fa" >Mimic, Failed-Apotheosis</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:6fc78492f84b372a"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/moit-of-shub-niggurath" jotId="wuid:gx:6fc78492f84b372a" >Moit of Shub-Niggurath</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/moit-of-shub-niggurath/slugspawn" jotId="wuid:gx:5a41083a45556246" >Slugspawn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/moit-of-shub-niggurath/spawning-canker" jotId="wuid:gx:27867952c7f5e7f7" >Spawning Canker</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/moon-beast" jotId="wuid:gx:11c2269ceba2deff" >Moon-Beast</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:32a5c37b1fb0863c"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/naga" jotId="wuid:gx:32a5c37b1fb0863c" >Naga</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/naga/naga-dark" jotId="wuid:gx:64c5971b972e41fc" >Naga, Dark</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/naga/naga-guardian" jotId="wuid:gx:31a508dbb830e008" >Naga, Guardian</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/naga/naga-lunar" jotId="wuid:gx:42e7fc9f12c4389c" >Naga, Lunar</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/naga/naga-royal" jotId="wuid:gx:f24b8e920de3631" >Naga, Royal</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/naga/naga-spirit" jotId="wuid:gx:3a6d82e35bf6fc2d" >Naga, Spirit</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/naga/naga-water" jotId="wuid:gx:157483062887dcd4" >Naga, Water</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/neh-thalggu" jotId="wuid:gx:4f91505f37391a4c" >Neh-Thalggu</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/neothelid" jotId="wuid:gx:6188d6c049dfed24" >Neothelid</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/nightmare-ettercap" jotId="wuid:gx:7c88e2b2424b5161" >Nightmare Ettercap</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/nuckalavee-TOHC" jotId="wuid:gx:63a406728ab2a018" >Nuckalavee (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/oronci" jotId="wuid:gx:6394027a3a116069" >Oronci</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:692b1b1f23b1d902"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/otyugh" jotId="wuid:gx:692b1b1f23b1d902" >Otyugh</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/otyugh/otyugh-corpsefeaster" jotId="wuid:gx:3e0e46fc7a55a4c1" >Otyugh, Corpsefeaster</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/otyugh/otyugh-mutant" jotId="wuid:gx:2b9cb932f2a941e1" >Otyugh, Mutant</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/otyugh/otyugh-oozing" jotId="wuid:gx:6963de5238b62d05" >Otyugh, Oozing</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/otyugh/otyugh-plaguebearer" jotId="wuid:gx:565ac428432b48a" >Otyugh, Plaguebearer</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/phasm" jotId="wuid:gx:2eef8b3b345b9925" >Phasm</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/phrenic-scourge" jotId="wuid:gx:7de29382f5e7b452" >Phrenic Scourge</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/possessor" jotId="wuid:gx:71b1e5fad6f38f81" >Possessor</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/quantum" jotId="wuid:gx:5866c0879a44df51" >Quantum</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:63e9acb825e9c3a7"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/reefclaw" jotId="wuid:gx:63e9acb825e9c3a7" >Reefclaw</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/reefclaw/enormous-reefclaw" jotId="wuid:gx:76320f143fdc3d5a" >Reefclaw, Enormous</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:1f483d28c7b7d60d"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/roper" jotId="wuid:gx:1f483d28c7b7d60d" >Roper</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/roper/shadow-roper" jotId="wuid:gx:665bc367100e138" >Roper, Shadow</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/roper/roper-stone" jotId="wuid:gx:3729834ecacce40a" >Roper, Stone</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/rorkoun" jotId="wuid:gx:587d8a65cec3c474" >Rorkoun</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:6d0a6510b511e361"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/rust-monster" jotId="wuid:gx:6d0a6510b511e361" >Rust Monster</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/rust-monster/rust-monster-rust-lord" jotId="wuid:gx:2997868837371f83" >Rust Lord</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sagari" jotId="wuid:gx:520d0725d2adaaa9" >Sagari</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/scavenger-worm" jotId="wuid:gx:3544c74ecb03a240" >Scavenger Worm</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/scylla" jotId="wuid:gx:3a2f884edd976be5" >Scylla</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sea-sphere-blubble-cnv" jotId="wuid:gx:698a4e6e24f0486a" >Sea Sphere (Blubble)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/seugathi" jotId="wuid:gx:e2d9ababd3bf6d2" >Seugathi</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/shriezyx" jotId="wuid:gx:3210f71db3cd6114" >Shriezyx</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:18d9c9ea30d6fef4"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub" jotId="wuid:gx:18d9c9ea30d6fef4" >Sinspawn</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub/envyspawn" jotId="wuid:gx:715ff27894c5affb" >Envyspawn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub/gluttonspawn" jotId="wuid:gx:73c71dc4848c9e58" >Gluttonspawn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub/greedspawn" jotId="wuid:gx:a552483cfa12895" >Greedspawn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub/lustspawn" jotId="wuid:gx:35f6e63c60274aa5" >Lustspawn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub/pridespawn" jotId="wuid:gx:57f90aa1e74a9ae4" >Pridespawn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub/slothspawn" jotId="wuid:gx:34bbae0566c84913" >Slothspawn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sinspawn-hub/wrathspawn" jotId="wuid:gx:61d93b3db5858879" >Wrathspawn</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/siyokoy" jotId="wuid:gx:619fd02d1ab87686" >Siyokoy</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/skin-stitcher" jotId="wuid:gx:44319e6ba27613be" >Skin Stitcher</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/slime-crawler-larval-tohc" jotId="wuid:gx:23ef66c99a19d0e3" >Slime Crawler, Larval</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/slime-crawler-mature-tohc" jotId="wuid:gx:459d1a4cf8e5d779" >Slime Crawler, Mature</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/snallygaster" jotId="wuid:gx:68a50285857781c8" >Snallygaster</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/somalcygot" jotId="wuid:gx:713f8c4dd498914d" >Somalcygot</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/spawn-of-yog-sothoth" jotId="wuid:gx:28f9aa544e13ed85" >Spawn of Yog-Sothoth</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/star-spawn-of-cthulhu" jotId="wuid:gx:689a5242d673182b" >Star-Spawn of Cthulhu</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/sudoth-tohc" jotId="wuid:gx:64398c7b8c44bbc5" >Sudoth</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/targotha" jotId="wuid:gx:5b270b7947f26f97" >Targotha</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/tendrul" jotId="wuid:gx:5dddefbb8bbaf059" >Tendrul</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/tentacled-horror" jotId="wuid:gx:3c04ee7f6909108b" >Tentacled Horror</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/tentamort" jotId="wuid:gx:7411936933884818" >Tentamort</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/tentamort-TOHC" jotId="wuid:gx:76e4f55660007655" >Tentamort (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/thessalgorgon-tohc" jotId="wuid:gx:39a7996d20e40613" >Thessalgorgon</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/thessalhydra-tohc" jotId="wuid:gx:119c69eb832ae9ab" >Thessalhydra</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/thessalisk-tohc" jotId="wuid:gx:4506b14600fee29a" >Thessalisk</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/transposer" jotId="wuid:gx:210e37ed82df5be4" >Transposer</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/trapper-TOHC" jotId="wuid:gx:48b176a99415dcd1" >Trapper</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/trench-mist" jotId="wuid:gx:1d8d2827ed46ce16" >Trench Mist</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/trench-newt" jotId="wuid:gx:2742fe6f0ed7f97f" >Trench Newt</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/t-shann" jotId="wuid:gx:6a1b0ba2e97aa1b5" >T’shann</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/vampiric-mist" jotId="wuid:gx:49eb0cab237ad919" >Vampiric Mist</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/veiled-master" jotId="wuid:gx:e143431f8ad6dd0" >Veiled Master</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/vemerak" jotId="wuid:gx:62782a17ef77c88d" >Vemerak</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/vilstrak" jotId="wuid:gx:2710a38e624a9836" >Vilstrak (Tunnel Thug)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/volt" jotId="wuid:gx:2c88a28896c9c4de" >Volt (Bolt Wurm)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/vorin" jotId="wuid:gx:673b790f208eedde" >Vorin</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/weaverworm" jotId="wuid:gx:29963328407c2de8" >Weaverworm</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/well-lurker-tohc" jotId="wuid:gx:6283a4d0219a3f5" >Well Lurker</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/whirlmaw" jotId="wuid:gx:74c9928cfa1639e3" >Whirlmaw</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/will-o--wisp" jotId="wuid:gx:4582a2c3580006b6" >Will-o'-Wisp</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/wolf-in-sheep-s-clothing" jotId="wuid:gx:6a80b5088e24df65" >Wolf-in-Sheep’s-Clothing</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/wolf-in-sheep-s-clothing-tohc" jotId="wuid:gx:5dee80ddb11cf75d" >Wolf-in-Sheep’s-Clothing (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/yangethe" jotId="wuid:gx:2adc730251708d1f" >Yangethe</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/aberrations/yithian" jotId="wuid:gx:38b685920de44385" >Yithian</a>
+			</li>
+		<li data-role="list-divider">Animals</li>
+			<li class="topLevel nav-first"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/archaeopteryx" jotId="wuid:gx:198f0bce9e20942e" >Archaeopteryx</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/armadillo" jotId="wuid:gx:bb8a1d2d12f0a25" >Armadillo</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:4f2a044d99359e8e"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/axe-beak" jotId="wuid:gx:4f2a044d99359e8e" >Axe Beak</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/axe-beak/diatryma" jotId="wuid:gx:7944d29fc3efe3a0" >Axe Beak, Diatryma</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/axe-beak/axe-beak-terror-bird" jotId="wuid:gx:48de16cce7b0f213" >Axe Beak, Terror Bird</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/axe-beak-TOHC" jotId="wuid:gx:1db27bf26ca3e85f" >Axe Beak (3pp)</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:30174fa9cf03493d"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/badger" jotId="wuid:gx:30174fa9cf03493d" >Badger</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/badger/badger-dire" jotId="wuid:gx:50aa3072d39ab2d8" >Badger, Dire</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/barracuda-swamp" jotId="wuid:gx:75b54cc1ae602b95" >Barracuda, Swamp</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:423cbfac11563979"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bat" jotId="wuid:gx:423cbfac11563979" >Bat</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bat/bat-swarm" jotId="wuid:gx:5ca978e95f78ecea" >Bat Swarm</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bat/bat" jotId="wuid:gx:600b47b2ef3077e" >Bat, Common</a>
+			</li>
+			<li class="parent" wuid="gx:3a465ecf0e06cf27"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bat/bat-dire" jotId="wuid:gx:3a465ecf0e06cf27" >Bat, Dire</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bat/bat-dire/summoned-creature-dire-bat" jotId="wuid:gx:562fda82429b3c9" >Summoned Creature: Dire Bat</a>
+			</li>
+			
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:3317b735bd38d630"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bear" jotId="wuid:gx:3317b735bd38d630" >Bear</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bear/black-bear" jotId="wuid:gx:4ab21b38ae298548" >Bear, Black</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bear/brown-grizzly-bear" jotId="wuid:gx:2331a5f6e341bf9f" >Bear, Brown (Grizzly)</a>
+			</li>
+			<li class="parent" wuid="gx:18674c7e608bd900"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bear/dire-bear" jotId="wuid:gx:18674c7e608bd900" >Bear, Dire</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bear/dire-bear/bear-giant-advanced-dire" jotId="wuid:gx:76cd13c163e3c964" >Bear, Giant Advanced (Dire)</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/bear/polar-bear" jotId="wuid:gx:4d81fdcd912ef764" >Bear, Polar</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:4e4992aab2d49e98"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/boar" jotId="wuid:gx:4e4992aab2d49e98" >Boar</a>
+			
+			<li class="parent" wuid="gx:69eb0bf0b62f0f44"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/boar/boar" jotId="wuid:gx:69eb0bf0b62f0f44" >Boar, Common</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/boar/boar/summoned-creature-boar" jotId="wuid:gx:23efe7f7166d3018" >Summoned Creature: Boar</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/boar/dire-boar" jotId="wuid:gx:62e47230bf5c843" >Boar, Dire</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/boar/boar-sargavan" jotId="wuid:gx:26c39d3e72a05581" >Boar, Pit</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat" jotId="wuid:gx:2ec0013171b7482d" >Cat, Common</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:303753a892f58682"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great" jotId="wuid:gx:303753a892f58682" >Cat, Great</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/margay-tohc" jotId="wuid:gx:2024109518cdda0e" >Cat, Margay</a>
+			</li>
+			<li class="parent" wuid="gx:1608a916f74d4ac7"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/cheetah" jotId="wuid:gx:1608a916f74d4ac7" >Cheetah (Cat, Great)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/cheetah/summoned-creature-cheetah" jotId="wuid:gx:33b35653ed1e9f3d" >Summoned Creature: Cheetah</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/jaguar-tohc" jotId="wuid:gx:134ca5d0d6275d35" >Jaguar (Cat, Great)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/leopard" jotId="wuid:gx:2d68df44a1afecbc" >Leopard (Cat, Great)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/leopard-snow-tohc" jotId="wuid:gx:30be34d4d6589072" >Leopard, Snow (Cat, Great)</a>
+			</li>
+			<li class="parent" wuid="gx:69371dda7d720993"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/lion" jotId="wuid:gx:69371dda7d720993" >Lion (Cat, Great)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/lion/dire-lion" jotId="wuid:gx:3d3c4e73b24a9e4b" >Dire Lion (Cat, Great)</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/lion-cave-tohc" jotId="wuid:gx:3bdf7c7481c92b2d" >Lion, Cave (Cat, Great)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/lion-mountain-tohc" jotId="wuid:gx:2b24cf89a501f2e4" >Lion, Mountain (Cat, Great)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/mythical-lion-tohc" jotId="wuid:gx:12770dd03127b07a" >Lion, Mythical (Cat, Great)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/lynx-tohc" jotId="wuid:gx:5525fe737eff6ae2" >Lynx (Cat, Great)</a>
+			</li>
+			<li class="parent" wuid="gx:5cb3394ef0ee31c3"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/tiger" jotId="wuid:gx:5cb3394ef0ee31c3" >Tiger (Cat, Great)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cat-great/tiger/dire-tiger" jotId="wuid:gx:1ef8cf700c4956e6" >Dire Tiger (Cat, Great)</a>
+			</li>
+			
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:62a614cb99e6bc45"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean" jotId="wuid:gx:62a614cb99e6bc45" >Cetacean</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/cetacean-blue-whale" jotId="wuid:gx:e4cabd8389fe1b8" >Cetacean, Blue Whale</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/cetacean-crimson-whale" jotId="wuid:gx:71493d4f8ec5b6e2" >Cetacean, Crimson Whale</a>
+			</li>
+			<li class="parent" wuid="gx:15bb35e6fe4d8f25"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/dolphin" jotId="wuid:gx:15bb35e6fe4d8f25" >Cetacean, Dolphin</a>
+			
+			<li class="parent" wuid="gx:7cf7a0b9024f87d9"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/dolphin/dolphin" jotId="wuid:gx:7cf7a0b9024f87d9" >Cetacean, Dolphin (Common)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/dolphin/dolphin/summoned-creature-dolphin" jotId="wuid:gx:789358e13b9d75b0" >Summoned Creature: Dolphin</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/dolphin/orca" jotId="wuid:gx:60046c9d8f840415" >Cetacean, Orca (Killer Whale)</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/cetacean-narwhale" jotId="wuid:gx:430b1884933a9dc" >Cetacean, Narwhale</a>
+			</li>
+			<li class="parent" wuid="gx:5bb725883bce8340"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/whale" jotId="wuid:gx:5bb725883bce8340" >Cetacean, Whale (Common)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cetacean/whale/whale-great-white" jotId="wuid:gx:1819bf84205f9522" >Whale, Great White</a>
+			</li>
+			
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/cooshee-ff" jotId="wuid:gx:25d41b82b80817cd" >Cooshee (3pp)</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:3d5b0a2e7833d84e"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians" jotId="wuid:gx:3d5b0a2e7833d84e" >Crocodilians</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/Alligator" jotId="wuid:gx:2e5805a81f5ce01c" >Alligator</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/dwarf-caiman" jotId="wuid:gx:2ebaaf3872b2561c" >Caiman, Dwarf</a>
+			</li>
+			<li class="parent" wuid="gx:45dbcb0a91674f4a"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/crocodile" jotId="wuid:gx:45dbcb0a91674f4a" >Crocodile</a>
+			
+			<li class="parent" wuid="gx:11aa6ca0d4509377"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/crocodile/crocodile" jotId="wuid:gx:11aa6ca0d4509377" >Crocodile</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/crocodile/crocodile/summoned-creature-crocodile" jotId="wuid:gx:44a28d6f90b27185" >Summoned Creature: Crocodile</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/crocodile/dire-crocodile" jotId="wuid:gx:22eaea205269a169" >Crocodile, Dire</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/crocodile/crocodile-hetkoshu" jotId="wuid:gx:5257c5e309088210" >Crocodile, Hetkoshu</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/deinosuchus" jotId="wuid:gx:d76d2bcc453705d" >Crocodilian, Deinosuchus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/crocodile-marine" jotId="wuid:gx:59ccc351c9d53bda" >Crocodilian, Marine Crocodile</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/crocodilians/crocodile-saltwater" jotId="wuid:gx:16971db31da6e11c" >Crocodilian, Saltwater Crocodile</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:74ffcdcfdf45a578"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur" jotId="wuid:gx:74ffcdcfdf45a578" >Dinosaur</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/allosaurus" jotId="wuid:gx:5443e62300c717bc" >Dinosaur, Allosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/ankylosaurus" jotId="wuid:gx:313bdedcd98c7491" >Dinosaur, Ankylosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/brachiosaurus" jotId="wuid:gx:4bd90c2140951067" >Dinosaur, Brachiosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/brontosaurus" jotId="wuid:gx:6ebfdfeef68f61f8" >Dinosaur, Brontosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/compsognathus" jotId="wuid:gx:2c5956ed4c0fc105" >Dinosaur, Compsognathus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/deinonychus" jotId="wuid:gx:6c0189c5d0971fc8" >Dinosaur, Deinonychus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/dinosaur-dimetrodon" jotId="wuid:gx:7b52d43ccb6de1fc" >Dinosaur, Dimetrodon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/dinosaur-diplodocus" jotId="wuid:gx:20d8674f6c7d666b" >Dinosaur, Diplodocus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/elasmosaurus" jotId="wuid:gx:1729ad7776165668" >Dinosaur, Elasmosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/dinosaur-iguanodon" jotId="wuid:gx:3315cdfb3f4ab21" >Dinosaur, Iguanodon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/kronosaurus" jotId="wuid:gx:7deedeef6bf29874" >Dinosaur, Kronosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/megaraptor" jotId="wuid:gx:1318733832a0455b" >Dinosaur, Megaraptor</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/nothosaur" jotId="wuid:gx:231488f1f6dcee85" >Dinosaur, Nothosaur</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/dinosaur-pachycephalosaurus" jotId="wuid:gx:3926107127759180" >Dinosaur, Pachycephalosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/parasaurolophus" jotId="wuid:gx:7ebcbbc7347d322c" >Dinosaur, Parasaurolophus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/dinosaur-spinosaurus" jotId="wuid:gx:19e14480b93951d" >Dinosaur, Spinosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/stegosaurus" jotId="wuid:gx:41faddac4ea581fd" >Dinosaur, Stegosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/dinosaur-styracosaurus" jotId="wuid:gx:56b95625f41666bb" >Dinosaur, Styracosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/triceratops" jotId="wuid:gx:1e91429e741c2be7" >Dinosaur, Triceratops</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/tylosaurus" jotId="wuid:gx:709f273174f65d0b" >Dinosaur, Tylosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/tyrannosaurus" jotId="wuid:gx:4e44fa781a7d60d" >Dinosaur, Tyrannosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dinosaur/velociraptor" jotId="wuid:gx:493e8fe8c4153ee8" >Dinosaur, Velociraptor</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dodo" jotId="wuid:gx:fb63132a4eec314" >Dodo</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:658f9446992d6476"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog" jotId="wuid:gx:658f9446992d6476" >Dog</a>
+			
+			<li class="parent" wuid="gx:c88ac863d4f2272"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/breeds" jotId="wuid:gx:c88ac863d4f2272" >Dog Breeds</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/breeds/apollo" jotId="wuid:gx:5855e53b93558898" >Apollo</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/breeds/badgerhound" jotId="wuid:gx:6ceb3f3184df477" >Badgerhound</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/breeds/blond-mastiff" jotId="wuid:gx:d808e1fd0ec638b" >Blond Mastiff</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/breeds/bull-mastiff" jotId="wuid:gx:58d50302eacc1f36" >Bull Mastiff</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/breeds/giant-fiendish-bull-mastiff" jotId="wuid:gx:4495a2d6a4e8fa73" >Bull Mastiff, Giant Fiendish</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/breeds/bulldog" jotId="wuid:gx:6dccb992d7e59f8a" >Bulldog</a>
+			</li>
+			
+			</li>
+			<li class="parent" wuid="gx:2e7a2f25fc7a3c7b"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/dog" jotId="wuid:gx:2e7a2f25fc7a3c7b" >Dog, Common</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/dog/summoned-creature-dog" jotId="wuid:gx:a3d8a9cd71ab614" >Summoned Creature: Dog</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/corgi-dire" jotId="wuid:gx:237955a8bf492e92" >Dog, Corgi, Dire</a>
+			</li>
+			<li class="parent" wuid="gx:89866117aa9b86e"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/goblin-dog" jotId="wuid:gx:89866117aa9b86e" >Dog, Goblin</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/goblin-dog/summoned-creature-goblin-dog" jotId="wuid:gx:2da38f69334af113" >Summoned Creature: Goblin Dog</a>
+			</li>
+			
+			</li>
+			<li class="parent" wuid="gx:62a121c5c9f3309d"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/riding-dog" jotId="wuid:gx:62a121c5c9f3309d" >Dog, Riding</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/riding-dog/summoned-creature-riding-dog" jotId="wuid:gx:1379d5dfb62d8345" >Summoned Creature: Riding Dog</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dog/jackal" jotId="wuid:gx:70cf32840ea6349f" >Jackal</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:2b779370b60ffd26"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dogmole-kp" jotId="wuid:gx:2b779370b60ffd26" >Dogmole</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/dogmole-kp/dogmole-juggernaut-kp" jotId="wuid:gx:5b515c5c30315121" >Dogmole Juggernaut</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/donkey-rat" jotId="wuid:gx:25bf9660bcc09583" >Donkey Rat</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:6b8496eb46326ccb"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eagle" jotId="wuid:gx:6b8496eb46326ccb" >Eagle</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eagle/summoned-creature-eagle" jotId="wuid:gx:40cb3f7aa368894d" >Summoned Creature: Eagle</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:3c461c360e30093d"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel" jotId="wuid:gx:3c461c360e30093d" >Eel</a>
+			
+			<li class="parent" wuid="gx:527c1a7ba25e80f5"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel/eel-electric" jotId="wuid:gx:527c1a7ba25e80f5" >Eel, Electric</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel/eel-electric/summoned-creature-electric-eel" jotId="wuid:gx:577d1ff4a7ad67c9" >Summoned Creature: Electric Eel</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel/eel-electric-tohc" jotId="wuid:gx:3ccded8d9eb39781" >Eel, Electric (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel/eel-electric-dire" jotId="wuid:gx:764ef796e348578f" >Eel, Electric (Dire)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel/eel-moray-giant" jotId="wuid:gx:54a0186bb31a940c" >Eel, Giant Moray</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel/eel-giant-moray-tohc" jotId="wuid:gx:2fc334df6d81442a" >Eel, Giant Moray (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/eel/eel-gulper-tohc" jotId="wuid:gx:3f818f179d1505a6" >Eel, Gulper</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:386beec7baba94f5"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/animal-elemental-fgg" jotId="wuid:gx:386beec7baba94f5" >Elemental Animal</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/animal-elemental-fgg/fire-fish-fgg" jotId="wuid:gx:f31bf5d6ac71a1b" >Fire Fish</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:41cd769027771263"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/elephant" jotId="wuid:gx:41cd769027771263" >Elephant</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/elephant/elephant" jotId="wuid:gx:6fb24777b5a83b5d" >Elephant, Common</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/elephant/elephant-mammoth" jotId="wuid:gx:2c7221c1ffcacd0d" >Elephant, Mammoth</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/elephant/elephant-mastodon" jotId="wuid:gx:308ddac452fb8c8" >Elephant, Mastodon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/elephant/mastodon-tohc" jotId="wuid:gx:19ed376a6b5b46af" >Elephant, Mastodon (3pp)</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/emu" jotId="wuid:gx:6ad949ebf898c689" >Emu</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/falcon-giant-tohc" jotId="wuid:gx:7bad3634e75369c9" >Falcon, Giant</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/familiar" jotId="wuid:gx:228004f81dfeebf" >Familiar</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:5ac28e81e0edf718"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish" jotId="wuid:gx:5ac28e81e0edf718" >Fish</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-archerfish-giant-TOHC" jotId="wuid:gx:61a66d68c5e62b7" >Fish, Archerfish (Giant)</a>
+			</li>
+			<li class="parent" wuid="gx:c946f811000fce3"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda" jotId="wuid:gx:c946f811000fce3" >Fish, Barracuda</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda/dire-barracuda-CR-5" jotId="wuid:gx:3d291996bbc377c8" >Barracuda, Dire</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda/barracuda-large" jotId="wuid:gx:74385b3867fd055e" >Barracuda, Large</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda/barracuda-large-TOHC" jotId="wuid:gx:15193d2c6d999428" >Barracuda, Large (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda/barracuda-medium" jotId="wuid:gx:2eef4ab8da96f24" >Barracuda, Medium</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda/barracuda-medium-TOHC" jotId="wuid:gx:3b5ef555c91d4a60" >Barracuda, Medium (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda/barracuda-small" jotId="wuid:gx:2d9560b2d7fa37ea" >Barracuda, Small</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-barracuda/barracuda-small-TOHC" jotId="wuid:gx:5a576247afa93949" >Barracuda, Small (3pp)</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-caribe-giant-tohc" jotId="wuid:gx:6208db5fd8e9b3e9" >Fish, Caribe (Giant)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/dragonfish-tohc" jotId="wuid:gx:4314df08329a0aa3" >Fish, Dragonfish</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-dunkleosteus" jotId="wuid:gx:4f86aa38284c1035" >Fish, Dunkleosteus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-electric-catfish-giant-tohc" jotId="wuid:gx:5de5b36121851e0b" >Fish, Electric Catfish (Giant)</a>
+			</li>
+			<li class="parent" wuid="gx:29bce343613be04c"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-gar" jotId="wuid:gx:29bce343613be04c" >Fish, Gar</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-gar/gar-giant" jotId="wuid:gx:69c7747b9d8c7b85" >Gar, Giant</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-giant-blowfish" jotId="wuid:gx:4a6705c9e340dae6" >Fish, Giant Blowfish</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/hagfish-slimy" jotId="wuid:gx:4f15cea2177dd5e3" >Fish, Hagfish (Slimy)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/pike-giant-tohc" jotId="wuid:gx:28752d6ea404fd43" >Fish, Pike, Giant</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-piranha-mature" jotId="wuid:gx:19ba588ae4c7ba56" >Fish, Piranha (Mature)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-piranha-swarm-jbe" jotId="wuid:gx:27686ce11bf19663" >Fish, Piranha Swarm (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/swarm-piranha-tohc" jotId="wuid:gx:71fee87c37c155d1" >Fish, Piranha Swarm (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/quipper" jotId="wuid:gx:208c2ea53690ba10" >Fish, Quipper</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-stumble-fish" jotId="wuid:gx:42983b66e226f506" >Fish, Stumble Fish</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-swordfish" jotId="wuid:gx:773dbb33845273e3" >Fish, Swordfish</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/fish-tiger" jotId="wuid:gx:3a7a5c3de79118a1" >Fish, Tiger</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fish/tiger-barb-giant" jotId="wuid:gx:4ad984275262c345" >Fish, Tiger Barb (Giant)</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:9747ffd04d28836"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fox" jotId="wuid:gx:9747ffd04d28836" >Fox</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fox/fox-firefoot-fennec" jotId="wuid:gx:1eee07a740461745" >Fox, Firefoot Fennec</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/fox-tohc" jotId="wuid:gx:7033b32862a58cb9" >Fox (3pp)</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:5e9fc0bfc2a04daa"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog" jotId="wuid:gx:5e9fc0bfc2a04daa" >Frog</a>
+			
+			<li class="parent" wuid="gx:10d08769b9cb88d6"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-giant" jotId="wuid:gx:10d08769b9cb88d6" >Frog, Giant</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-giant/summoned-creature-giant-frog" jotId="wuid:gx:7ce7f1ee335f20b0" >Summoned Creature: Giant Frog</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-giant-tohc" jotId="wuid:gx:2b83358b323d0e28" >Frog, Giant (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-giant-dire-ff" jotId="wuid:gx:7b8688b531659860" >Frog, Giant Dire (3PP)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-giant-dire-tohc" jotId="wuid:gx:76dca5a6f5b0511d" >Frog, Giant Dire (3PP-FGG)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-giant-dire-abyssal-tohc" jotId="wuid:gx:3e9c42ecb09b6d34" >Frog, Giant Dire Abyssal</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-killer-ff" jotId="wuid:gx:62eac442298ea1f9" >Frog, Killer (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-killer-tohc" jotId="wuid:gx:6156b0823e10d306" >Frog, Killer (3PP-FGG)</a>
+			</li>
+			<li class="parent" wuid="gx:569f7704a38980cd"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-poisonous" jotId="wuid:gx:569f7704a38980cd" >Frog, Poisonous</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-poisonous/summoned-creature-poisonous-frog" jotId="wuid:gx:41370e10a444c32e" >Summoned Creature: Poisonous Frog</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/frog-poisonous-tohc" jotId="wuid:gx:7ab8d129da9fd1b7" >Frog, Poisonous (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/frog/swarm-poisonous-frog-tohc" jotId="wuid:gx:4598ebec152bea02" >Frog, Poisonous Swarm</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hamster-giant" jotId="wuid:gx:20cffc5bcd3c5397" >Hamster, Giant</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hawk" jotId="wuid:gx:5ccc47234b7852a8" >Hawk</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hedgehog" jotId="wuid:gx:4ed25de126a913bf" >Hedgehog</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:4f6514001d74d7bf"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals" jotId="wuid:gx:4f6514001d74d7bf" >Herd Animals</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/antelope" jotId="wuid:gx:45fe770147b65ec7" >Herd Animal, Antelope</a>
+			</li>
+			<li class="parent" wuid="gx:4e624d941acd391a"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/aurochs" jotId="wuid:gx:4e624d941acd391a" >Herd Animal, Aurochs</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/aurochs/herd-animal-mountain-auroch" jotId="wuid:gx:74ded2b31bb0d2a4" >Herd Animal, Mountain Aurochs</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/aurochs/summoned-creature-aurochs" jotId="wuid:gx:3388ae578f4de96" >Summoned Creature: Aurochs</a>
+			</li>
+			
+			</li>
+			<li class="parent" wuid="gx:75ff76cc087c01ac"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/bison" jotId="wuid:gx:75ff76cc087c01ac" >Herd Animal, Bison</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/bison/dire-bison-tohc" jotId="wuid:gx:7759dda323324671" >Herd Animal, Bison, Dire</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/camel" jotId="wuid:gx:caa8cfe6090f98" >Herd Animal, Camel</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/deer-tohc" jotId="wuid:gx:7522877f0049ded9" >Herd Animal, Deer</a>
+			</li>
+			<li class="parent" wuid="gx:61f004aadb837ce5"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/elk" jotId="wuid:gx:61f004aadb837ce5" >Herd Animal, Elk</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/elk/herd-animal-elk-giant" jotId="wuid:gx:7dd8165d6cf413f9" >Herd Animal, Elk (Giant)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/elk/herd-animal-elk-megaloceros" jotId="wuid:gx:1462bd8eb1023006" >Herd Animal, Elk (Megaloceros)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/elk/elk-river" jotId="wuid:gx:5692e826450d7a2a" >Herd Animal, Elk (River)</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/herd-animal-giraffe" jotId="wuid:gx:13e8c4d76fb3eb33" >Herd Animal, Giraffe</a>
+			</li>
+			<li class="parent" wuid="gx:7fb0e7070d122cd0"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/goat" jotId="wuid:gx:7fb0e7070d122cd0" >Herd Animal, Goat</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/goat/dire-goat-tohc" jotId="wuid:gx:5a36e9b0dfe5d032" >Herd Animal, Goat, Dire</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/grangeri-cr7" jotId="wuid:gx:70cc7ba1bfc326f0" >Herd Animal, Grangeri</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/herd-animal-llama" jotId="wuid:gx:9a6177031655fc2" >Herd Animal, Llama</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/moose" jotId="wuid:gx:6a7e0a3cb60e4f6e" >Herd Animal, Moose</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/herd-animal-moose-fgg" jotId="wuid:gx:c5dac4851f53215" >Herd Animal, Moose (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/ram" jotId="wuid:gx:676e53cd70b757ed" >Herd Animal, Ram</a>
+			</li>
+			<li class="parent" wuid="gx:724ed6cfce823516"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/sheep-ram-tohc" jotId="wuid:gx:724ed6cfce823516" >Herd Animal, Ram (3pp)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/sheep-ram-tohc/ram-dire-tohc" jotId="wuid:gx:23fba5e4727f69d5" >Herd Animal, Ram, Dire</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/scythe-horn-tohc" jotId="wuid:gx:610cb7e5de7e83ab" >Herd Animal, Scythe Horn</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/sheep-tohc" jotId="wuid:gx:4f9e87f07a8d8462" >Herd Animal, Sheep</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/herd-animals/herd-animal-stag" jotId="wuid:gx:6dbde9246d9ea49f" >Herd Animal, Stag</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:569bf7c47c3b8883"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hippopotamus" jotId="wuid:gx:569bf7c47c3b8883" >Hippopotamus</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hippopotamus/hippopotamus-behemoth" jotId="wuid:gx:55c89612ef2c6864" >Hippopotamus, Behemoth</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:44a34f4c672af42a"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hippopotamus-tohc" jotId="wuid:gx:44a34f4c672af42a" >Hippopotamus (3pp)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hippopotamus-tohc/hippopotamus-dire-tohc" jotId="wuid:gx:449a781d92a0bc86" >Hippopotamus, Dire</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:6df2b14b08049fa6"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse" jotId="wuid:gx:6df2b14b08049fa6" >Horse, Light</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse/horse-advanced" jotId="wuid:gx:3b07326922841fb9" >Horse, Advanced</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse/heavy-horse" jotId="wuid:gx:3e29fe1cae89654d" >Horse, Heavy</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse/horse-war-fiendish" jotId="wuid:gx:2791c6fd3592ea51" >Horse, Heavy, Combat Trained (Fiendish)</a>
+			</li>
+			<li class="parent" wuid="gx:219a44b9b860e0a4"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse/pony" jotId="wuid:gx:219a44b9b860e0a4" >Pony</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse/pony/pony-war" jotId="wuid:gx:1aeda890a4c8501c" >Pony, Combat Trained</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse/pony/summoned-creature-pony-horse" jotId="wuid:gx:6f22a41067d82892" >Summoned Creature: Pony</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/horse/summoned-creature-horse" jotId="wuid:gx:7f406abd31ffdf7a" >Summoned Creature: Horse</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hydrus" jotId="wuid:gx:21a3cc2cb7e3460d" >Hydrus</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:3c4ca7c8c69c3e35"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hyena" jotId="wuid:gx:3c4ca7c8c69c3e35" >Hyena</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hyena/hyaenodon" jotId="wuid:gx:245223fab75710fe" >Hyaenodon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hyena/hyena-dire" jotId="wuid:gx:550751340c28af3d" >Hyena, Dire</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/hyena/summoned-creature-hyena" jotId="wuid:gx:58c69315fa917a4e" >Summoned Creature: Hyena</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:304934a2c02f74ed"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard" jotId="wuid:gx:304934a2c02f74ed" >Lizard</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/lizard-chameleon-giant" jotId="wuid:gx:6b87efbbbfe9cf7c" >Lizard, Chameleon (Giant)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/lizard-chameleon-giant-tohc" jotId="wuid:gx:3c2bb0534775026" >Lizard, Chameleon (Giant, 3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/lizard-common" jotId="wuid:gx:3569c7adcb35f883" >Lizard, Common</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/giant-frilled-lizard" jotId="wuid:gx:43683c5007f9cf02" >Lizard, Giant Frilled</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/lizard-giant-gecko" jotId="wuid:gx:5e6bdf37a1291197" >Lizard, Giant Gecko</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/lizard-blood-giant-rock-horned" jotId="wuid:gx:c22d4ef6cd2ccea" >Lizard, Giant Rock-Horned (Blood Lizard)</a>
+			</li>
+			<li class="parent" wuid="gx:6f779dfc97c19c2e"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/monitor-lizard" jotId="wuid:gx:6f779dfc97c19c2e" >Lizard, Monitor</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/lizard/monitor-lizard/summoned-creature-giant-lizard" jotId="wuid:gx:4b5b653a07efbf89" >Summoned Creature: Giant Lizard/Monitor Lizard</a>
+			</li>
+			
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/marsupial-kangaroo" jotId="wuid:gx:4c87702dacf01f3e" >Marsupial, Kangaroo</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:5214aac8f0b74837"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/marsupial-thylacine" jotId="wuid:gx:5214aac8f0b74837" >Marsupial, Thylacine</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/marsupial-thylacine/thylacine-brush" jotId="wuid:gx:7dd035484df6af1b" >Marsupial, Thylacine (Brush)</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:6a88dfa9d9366f1c"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna" jotId="wuid:gx:6a88dfa9d9366f1c" >Megafauna</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-archelon" jotId="wuid:gx:4dcfc17710d25c20" >Megafauna, Archelon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-arsinoitherium" jotId="wuid:gx:65b22fe816468e1" >Megafauna, Arsinoitherium</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-baluchitherium" jotId="wuid:gx:1d6b9762d3a51fc9" >Megafauna, Baluchitherium</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-basilosaurus" jotId="wuid:gx:3f3c32ff01196c4d" >Megafauna, Basilosaurus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-brontotherium-TOHC" jotId="wuid:gx:3adf9db2a00d983e" >Megafauna, Brontotherium</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-elasmotherium-tohc" jotId="wuid:gx:566b364a99800802" >Megafauna, Elasmotherium</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-glyptodon" jotId="wuid:gx:725045e3ae5f6b97" >Megafauna, Glyptodon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megalania" jotId="wuid:gx:6e2f1f3d39db322e" >Megafauna, Megalania</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/megafauna-megatherium" jotId="wuid:gx:6086d09890ae92c6" >Megafauna, Megatherium</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/megafauna/zeuglodon" jotId="wuid:gx:73fe8944339f146" >Megafauna, Zeuglodon</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/murder-of-crows" jotId="wuid:gx:8f69537e8b27bde" >Murder of Crows</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:36cd63417c821470"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/octopus" jotId="wuid:gx:36cd63417c821470" >Octopus</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/octopus/blue-ringed-octopus" jotId="wuid:gx:4e52f9a2c4a22e8e" >Octopus, Blue-Ringed</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/octopus/octopus-giant" jotId="wuid:gx:5fe6aa95d9a1487a" >Octopus, Giant</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/octopus/giant-lake-octopus" jotId="wuid:gx:1f4e7ac433b7f39c" >Octopus, Giant Lake</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/octopus/summoned-creature-octopus" jotId="wuid:gx:21876dea4bc3653d" >Summoned Creature: Octopus</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/oliphant-tohc" jotId="wuid:gx:6e7cfe8a2250a33c" >Oliphant</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/ostrich" jotId="wuid:gx:1647a03002e1840c" >Ostrich</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/otter" jotId="wuid:gx:39cce2b0631d3bcd" >Otter</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:4cb3ef9836d34de4"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/owl" jotId="wuid:gx:4cb3ef9836d34de4" >Owl</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/owl/owl-great-horned" jotId="wuid:gx:53cdb0c7d9a47026" >Owl, Great Horned</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/panda" jotId="wuid:gx:3e64e14ed81be96d" >Panda</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/parrot" jotId="wuid:gx:5edbd2591b267839" >Parrot</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/pig" jotId="wuid:gx:73812f7045824a2a" >Pig</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/platypus" jotId="wuid:gx:248fb45cb100e286" >Platypus</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:18ae8181712ea61c"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/porcupine" jotId="wuid:gx:18ae8181712ea61c" >Porcupine</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/porcupine/porcupine-dire-tohc" jotId="wuid:gx:38c7a3bc3a6f950a" >Porcupine, Dire</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/porcupine/porcupine-giant" jotId="wuid:gx:53914e8656673a80" >Porcupine, Giant</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:d0f401319d61bc2"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates" jotId="wuid:gx:d0f401319d61bc2" >Primates</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-ape-dire" jotId="wuid:gx:1aab52f36342f848" >Primate, Ape (Dire)</a>
+			</li>
+			<li class="parent" wuid="gx:482af8ea3fea0525"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-gorilla" jotId="wuid:gx:482af8ea3fea0525" >Primate, Ape (Gorilla)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-gorilla/summoned-creature-ape" jotId="wuid:gx:1b6c3473ca68bcd0" >Summoned Creature: Ape</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-orangutan" jotId="wuid:gx:792300d242e94214" >Primate, Ape (Orangutan)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-baboon" jotId="wuid:gx:55be82b5c3b6d023" >Primate, Baboon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-baboon-rock" jotId="wuid:gx:23623a3704e421ad" >Primate, Baboon (Rock)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-chimpanzee" jotId="wuid:gx:41b0f669bae4d033" >Primate, Chimpanzee</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-marmoset-giant-tohc" jotId="wuid:gx:b12c03c8cd26ac0" >Primate, Giant Marmoset</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/mandrill-tohc" jotId="wuid:gx:4a4557908eb3aca3" >Primate, Mandrill</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-monkey" jotId="wuid:gx:767b18656597257b" >Primate, Monkey</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/primates/primate-monkey-swarm" jotId="wuid:gx:13cebdc2bed6f255" >Primate, Monkey Swarm</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:210c3a4a6ac1ff49"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/pterosaur" jotId="wuid:gx:210c3a4a6ac1ff49" >Pterosaur</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/pterosaur/pterosaur-dimorphodon" jotId="wuid:gx:4168e1a669f39875" >Pterosaur, Dimorphodon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/pterosaur/pterosaur-pteranodon" jotId="wuid:gx:ee163a2d9cf7307" >Pterosaur, Pteranodon</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/pterosaur/pterosaur-quetzalcoatlus" jotId="wuid:gx:76992ffcf54b315a" >Pterosaur, Quetzalcoatlus</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/pterosaur/pterosaur-rhamphorhynchus" jotId="wuid:gx:69c80457fd921c3c" >Pterosaur, Rhamphorhynchus</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rabbit" jotId="wuid:gx:1216a35c552be532" >Rabbit</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/raccoon" jotId="wuid:gx:19891403ad023d5f" >Raccoon</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:1fe7ed2b0ac9fab"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/raccoon-tohc" jotId="wuid:gx:1fe7ed2b0ac9fab" >Raccoon (3pp)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/raccoon-tohc/raccoon-dire-tohc" jotId="wuid:gx:127d4bdb40b915ef" >Raccoon, Dire</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:70fcdabc8596d3f8"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat" jotId="wuid:gx:70fcdabc8596d3f8" >Rat</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat/rat-common" jotId="wuid:gx:18c749a0f09de251" >Rat</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat/rat-swarm" jotId="wuid:gx:26da49dc6e43a6ed" >Rat Swarm</a>
+			</li>
+			<li class="parent" wuid="gx:5b6f2f088a0f71cd"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat/dire-rat" jotId="wuid:gx:5b6f2f088a0f71cd" >Rat, Dire</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat/dire-rat/dire-rat-companions" jotId="wuid:gx:17a7d5e2447e859c" >Dire Rat Animal Companion Level 1</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat/dire-rat/dire-rat-companion-level-4" jotId="wuid:gx:9f807a097b6a5b2" >Dire Rat Companion Level 4+</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat/dire-rat/summoned-creature-dire-rat" jotId="wuid:gx:246afe0245e1759d" >Summoned Creature: Dire Rat</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rat/diseased-rat" jotId="wuid:gx:1519c18af894f172" >Rat, Diseased</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/raven" jotId="wuid:gx:e1285058d31fa7b" >Raven</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/swarm-raven-tohc" jotId="wuid:gx:4e02aa7e7e748939" >Raven Swarm</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/ray-manta-ray" jotId="wuid:gx:614c2c33dbc6e682" >Ray, Manta</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:dd9b4c126b8bf44"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/ray-stingray" jotId="wuid:gx:dd9b4c126b8bf44" >Ray, Stingray</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/ray-stingray/stingray-large-tohc" jotId="wuid:gx:487861d8cfff09f6" >Stingray, Large (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/ray-stingray/stingray-medium-tohc" jotId="wuid:gx:277ddd41bfdb1d2b" >Stingray, Medium (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/ray-stingray/stingray-small-tohc" jotId="wuid:gx:1f555c0f288be46b" >Stingray, Small (3pp)</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:5810095b86f95620"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rhinoceros" jotId="wuid:gx:5810095b86f95620" >Rhinoceros</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rhinoceros/wooly-rhinoceros" jotId="wuid:gx:3b8980b40fc465b0" >Rhinoceros, Woolly</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/rhinoceros/rhinoceros-woolly-tohc" jotId="wuid:gx:62d0264f46c015e4" >Rhinoceros, Woolly (3pp)</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/roc" jotId="wuid:gx:3e88dd4fb9efb063" >Roc</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/seahorse-giant" jotId="wuid:gx:7de4f38d1edc5e0d" >Seahorse, Giant</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/sea-horse-giant-tohc" jotId="wuid:gx:58a1fa2313b24c8" >Seahorse, Giant (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/seahorse-killer" jotId="wuid:gx:7a101d9e355883e2" >Seahorse, Killer</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/seal" jotId="wuid:gx:68490b71b9b0823e" >Seal</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/seal-elephant-ap" jotId="wuid:gx:788e6a41f96da6a8" >Seal, Elephant</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/seal-sea-lion-ap" jotId="wuid:gx:3adc659d4f63ac25" >Seal, Sea Lion</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:252379d44e57e6bc"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark" jotId="wuid:gx:252379d44e57e6bc" >Shark</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/shark-angustiden" jotId="wuid:gx:52f7b44c33f157f8" >Shark, Angustiden</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/shark-bull" jotId="wuid:gx:6b4575f9d2f9d8c9" >Shark, Bull</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/shark" jotId="wuid:gx:36f88432f8cfd356" >Shark, Common</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/dire-shark" jotId="wuid:gx:1b95a333faf48b7c" >Shark, Dire (Megalodon)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/great-white-shark" jotId="wuid:gx:69c04471283fb4d9" >Shark, Great White</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/hammerhead-shark" jotId="wuid:gx:54f1463472b4b9a6" >Shark, Hammerhead</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/shark-helicoprion" jotId="wuid:gx:3b39dc6803dbd6eb" >Shark, Helicoprion</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/shark-jigsaw" jotId="wuid:gx:70ff3bc2dc008291" >Shark, Jigsaw</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/shark/tiger-shark" jotId="wuid:gx:57d02ef9032b2eee" >Shark, Tiger</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:709c358096ffeef"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/skunk" jotId="wuid:gx:709c358096ffeef" >Skunk</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/skunk/skunk-giant" jotId="wuid:gx:73dab241ee709a5f" >Skunk, Giant</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/skunk-tohc" jotId="wuid:gx:2f5691448a6fb2bd" >Skunk (3pp)</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/sloth" jotId="wuid:gx:b2bd0eb78359037" >Sloth</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/sloth-dire-tohc" jotId="wuid:gx:7e8e363bc616f050" >Sloth, Dire</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:31d51bff0409d580"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/smilodon-tohc" jotId="wuid:gx:31d51bff0409d580" >Smilodon (Saber-Toothed Tiger)</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/smilodon-tohc/smilodon-dire-tohc" jotId="wuid:gx:4ed8c8827e937ca2" >Smilodon, Dire</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/smilodon-tohc/smilodon-homotherium-tohc" jotId="wuid:gx:4f48d66625076fee" >Smilodon, Homotherium</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:1e37f8bce1d4177d"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake" jotId="wuid:gx:1e37f8bce1d4177d" >Snake</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-asp" jotId="wuid:gx:2bf7f991c5bd0f5d" >Snake, Asp</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-cobra-emperor" jotId="wuid:gx:1381d5277c6faab5" >Snake, Cobra (Emperor)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-king-cobra" jotId="wuid:gx:d9d3d42bcb54b99" >Snake, Cobra (King)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-cobra-spitting" jotId="wuid:gx:2d472c5fde53f082" >Snake, Cobra (Spitting)</a>
+			</li>
+			<li class="parent" wuid="gx:7e8e21e3f5a42c4b"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-constrictor" jotId="wuid:gx:7e8e21e3f5a42c4b" >Snake, Constrictor</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-constrictor/summoned-creature-constrictor-snake" jotId="wuid:gx:41201d07adde826" >Summoned Creature: Constrictor Snake</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-constrictor-anaconda" jotId="wuid:gx:5fc396f2a75192d9" >Snake, Constrictor (Anaconda)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/giant-anaconda" jotId="wuid:gx:3a0f0b6224ca1516" >Snake, Constrictor (Giant Anaconda)</a>
+			</li>
+			<li class="parent" wuid="gx:86b08908e5643de"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-sea" jotId="wuid:gx:86b08908e5643de" >Snake, Sea</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-sea/snake-sea-giant" jotId="wuid:gx:333bf39a9b8105f" >Snake, Sea (Giant)</a>
+			</li>
+			
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-sea-cnv" jotId="wuid:gx:25c368b64b7f3d6b" >Snake, Sea (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-swarm" jotId="wuid:gx:d4f1161ee730b12" >Snake, Swarm</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-swarm-venomous" jotId="wuid:gx:44aa837834fcf491" >Snake, Swarm (Venomous)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-venomous" jotId="wuid:gx:6f35501be9411d71" >Snake, Venomous</a>
+			</li>
+			<li class="parent" wuid="gx:717ba00152bf953a"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-viper" jotId="wuid:gx:717ba00152bf953a" >Snake, Viper</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/snake/snake-viper/summoned-creature-viper" jotId="wuid:gx:77ad232e6a56f7fd" >Summoned Creature: Viper</a>
+			</li>
+			
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:8580f94c827fdf1"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/squid" jotId="wuid:gx:8580f94c827fdf1" >Squid</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/squid/giant-squid" jotId="wuid:gx:695a480ab22bbd0a" >Squid, Giant</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/squid/summoned-creature-squid" jotId="wuid:gx:28eb28876161aa7e" >Summoned Creature: Squid</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:5083a45e5d22a22a"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/squirrel" jotId="wuid:gx:5083a45e5d22a22a" >Squirrel</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/squirrel/squirrel-flying" jotId="wuid:gx:3abf7fd1dcaa3cc4" >Squirrel, Flying</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/swan-trumpeter" jotId="wuid:gx:6ad11ff6a9140306" >Swan, Trumpeter</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/terror-wolf" jotId="wuid:gx:8a0a78e25c25d62" >Terror Wolf</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/thrush" jotId="wuid:gx:6a99e766c13941a8" >Thrush</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:46f071613c7a2256"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/toad" jotId="wuid:gx:46f071613c7a2256" >Toad</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/toad/toad-giant" jotId="wuid:gx:32d73066a175c17b" >Toad, Giant</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/tortoise-giant" jotId="wuid:gx:176bb12cf3d2bf61" >Tortoise, Giant</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/tortoise-immense" jotId="wuid:gx:20ccafc531a000e2" >Tortoise, Immense</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/tuatara" jotId="wuid:gx:1b6cceb02d16b68a" >Tuatara</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/tuatara-giant-tohc" jotId="wuid:gx:289688d45eb7c1d6" >Tuatara, Giant</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:3741cf42260a55f8"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/turtle" jotId="wuid:gx:3741cf42260a55f8" >Turtle</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/turtle/turtle-giant-snapping" jotId="wuid:gx:64532a883441663e" >Turtle, Giant Snapping</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/turtle/snapping-turtle-giant-tohc" jotId="wuid:gx:525cccdf9cf00eed" >Turtle, Giant Snapping (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/turtle/snapping-turtle" jotId="wuid:gx:4994f3dec4ee3d95" >Turtle, Snapping</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:4e89965e4b9d8c96"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/vulture" jotId="wuid:gx:4e89965e4b9d8c96" >Vulture</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/vulture/vulture-advanced" jotId="wuid:gx:3440ce22c2d47d02" >Vulture, Advanced</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/vulture/vulture-giant" jotId="wuid:gx:73bb9ef10646c8e0" >Vulture, Giant</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:633d8f4499ca866"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/walrus" jotId="wuid:gx:633d8f4499ca866" >Walrus</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/walrus/walrus-emperor" jotId="wuid:gx:12174921f514efaa" >Walrus, Emperor</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/walrus-ap" jotId="wuid:gx:4136e26c5718c9cd" >Walrus (3pp)</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:4f9b8e718c287f5b"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/weasel" jotId="wuid:gx:4f9b8e718c287f5b" >Weasel</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/weasel/weasel-dire" jotId="wuid:gx:2027a297e6f9f168" >Weasel, Dire</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/weasel/weasel-dire-kp" jotId="wuid:gx:62d1bcdad32cd751" >Weasel, Dire (3pp)</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/weasel/weasel-giant" jotId="wuid:gx:3235a22e759e2a36" >Weasel, Giant</a>
+			</li>
+			
+			</li>
+			<li class="topLevel parent" wuid="gx:4f1b321ab4df24a7"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/wolf" jotId="wuid:gx:4f1b321ab4df24a7" >Wolf</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/wolf/summoned-creature-wolf" jotId="wuid:gx:e0857b4122557ae" >Summoned Creature: Wolf</a>
+			</li>
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/wolf/dire-wolf" jotId="wuid:gx:24231613008bbe4f" >Wolf, Dire</a>
+			</li>
+			
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/wolliped-combat-trained" jotId="wuid:gx:5d54a3a5a08c78c9" >Wolliped, Combat Trained</a>
+			</li>
+			<li class="topLevel"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/wolliped-domesticated-wild" jotId="wuid:gx:5aba86fcf85bc9ea" >Wolliped, Domesticated/Wild</a>
+			</li>
+			<li class="topLevel parent" wuid="gx:26f5dac2171b4d06"><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/wolverine" jotId="wuid:gx:26f5dac2171b4d06" >Wolverine</a>
+			
+			<li class=""><a href="" data-rel="popup" src="/bestiary/monster-listings/animals/wolverine/wolverine-dire" jotId="wuid:gx:c62749c1026a0fd" >Wolverine, Dire</a>
+			</li>
+			
+		<li data-role="list-divider">Constructs</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Dragons</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Fey</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Humanoids</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Magical Beasts</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Monstrous Humanoids</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Oozes</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Outsiders</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Plants</li>
+			<li>asdf</li>
+		<li data-role="list-divider">Vermin</li>
+			<li>asdf</li>
+
+			
+		
 	</ul>
 			
 <script src="js/bestiary.js"></script>
