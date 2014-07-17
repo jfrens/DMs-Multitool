@@ -9,7 +9,36 @@
 <script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
 </head>
 <body>
-<a href="/dice">dice</a>
-<a href="/bestiary">bestiary</a>
+<div data-role="popup" id="popupMenu" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+	<!--div class="ui-grid-b">
+		<div class="ui-block-a"><button id="popupMenuClose">close</button></div>
+		<div class="ui-block-b"></div>
+		<div class="ui-block-c"><!--button>engage</button--></div>
+	</div-->
+	<a href="#dicePage" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Dice</a>
+	<a href="#bestiaryPage" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Bestiary</a>
+	<a href="#spellbookPage" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Spellbook</a>	
+	<iframe id="popupFrame" src="" width="1000" seamless></iframe>
+	<!--script>
+		$("#popupMenuClose").on("click", function () {
+			$("#popupMenu").popup("close");
+			$('body').css('overflow','auto');
+		});
+	</script-->
+</div>
+
+<div data-role="page" id="dicePage">
+	<a href="#popupMenu" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Open popup thingy</a>
+	<a href="/dice">dice</a>
+	
+</div>
+<div data-role="page" id="bestiaryPage">
+	<a href="#popupMenu" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Open popup thingy</a>
+	<a href="/bestiary">bestiary</a>
+</div>
+<div data-role="page" id="spellbookPage">
+	<a href="#popupMenu" data-transition="slide" class="ui-btn ui-corner-all ui-btn-inline">Open popup thingy</a>
+	<a href="/spellbook">spellbook</a>
+</div>
 </body>
 </html>

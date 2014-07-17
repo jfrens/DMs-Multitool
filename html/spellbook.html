@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Spellbook</title>
+<link rel="stylesheet" href="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.css">
+<script src="//code.jquery.com/jquery-1.10.2.min.js"></script>
+<script src="//code.jquery.com/mobile/1.4.2/jquery.mobile-1.4.2.min.js"></script>
+
+</head>
+
+<body>
+<div data-role="popup" id="popupWindow" data-overlay-theme="b" data-theme="a" data-tolerance="15,15" class="ui-content">
+	<div class="ui-grid-b">
+		<div class="ui-block-a"><button id="popupClose">close</button></div>
+		<div class="ui-block-b"></div>
+		<div class="ui-block-c"></div>
+	</div>
+	<iframe id="popupFrame" src="" width="1000" seamless></iframe>
+</div>
+
+
+	<ul data-role="listview" data-filter="true" data-inset="true">
+		<li data-role="list-divider">Constructs</li>
+			<li>asdf</li>
+			<li><a href="" data-rel="popup" src="/magic/all-spells/a/abeyance" jotid="wuid:gx:c788d994e007f63">Abeyance</a></li>
+	</ul>
+			
+<script src="js/bestiary.js"></script>
+</body>
+</html>

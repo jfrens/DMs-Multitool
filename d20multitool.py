@@ -20,6 +20,11 @@ class bestiaryPage (webapp2.RequestHandler):
 		template = jinja2_env.get_template('bestiary.html')
 		self.response.out.write(template.render())
 		
+class spellbookPage (webapp2.RequestHandler):
+	def get(self):
+		template = jinja2_env.get_template('spellbook.html')
+		self.response.out.write(template.render())
+		
 class bestiaryProxy (webapp2.RequestHandler):
 	def get(self):
 		str = self.request.url
@@ -42,4 +47,6 @@ application = webapp2.WSGIApplication([
 	('/bestiary', bestiaryPage),
 	('/bestiary/monster-listings/.*', bestiaryProxy),
 	('/_/.*', bestiaryProxy),
+	('/spellbook', spellbookPage),
+	('/magic/all-spells/.*', bestiaryProxy),
 ], debug=True)
